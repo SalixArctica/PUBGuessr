@@ -29,6 +29,11 @@
   font-family: pubgFont, sans-serif;
 }
 
+.inactive {
+  color: grey !important;
+  border: 5px solid grey !important;
+}
+
 .Map {
   height: 100%;
 }

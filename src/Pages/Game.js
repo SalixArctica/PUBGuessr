@@ -11,7 +11,10 @@ class Game extends React.Component {
   constructor() {
     super();
     this.state = {
-      guess: [0, 0],
+      guess: {
+        lat: 0,
+        lng: 0,
+      },
       location: {
         lat: 6341,
         lng: 2091
@@ -56,7 +59,7 @@ class Game extends React.Component {
             <ImageOverlay url={process.env.PUBLIC_URL + '/images/erangel_map.jpg'} bounds={ bounds } />
               <Marker position={this.state.guess}/>
           </Map>
-          <button onClick={this.submitGuess}>Make Guess</button>
+          <button className={ this.state.guess.lat == 0 && this.state.guess.lng == 0 ? 'inactive' : null} onClick={this.submitGuess}>Make Guess</button>
         </div>
         <div>
           <h1>Your guess was {this.state.distance} meters away</h1>
