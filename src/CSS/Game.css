@@ -1,0 +1,34 @@
+@font-face {
+  font-family: pubgFont;
+  src: url('../HeadlinerNo.45 DEMO.ttf')
+}
+
+.pic360 {
+  cursor: grab;
+}
+
+.game {
+  position: relative;
+  color: rgb(221, 196, 65);
+}
+
+.mapDiv {
+  height: 300px;
+  width: 300px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.mapDiv > button {
+  width: 100%;
+  border: 5px solid rgb(221, 196, 65);
+  background-color: black;
+  color: rgb(221, 196, 65);
+  font-size: 40px;
+  font-family: pubgFont, sans-serif;
+}
+
+.Map {
+  height: 100%;
+}

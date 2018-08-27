@@ -3,8 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "360-react-pannellum": "0.0.3",
+    "leaflet": "^1.3.4",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
+    "react-dragscroll": "^2.0.1",
+    "react-leaflet": "^2.0.1",
+    "react-router-dom": "^4.3.1",
     "react-scripts": "1.1.5"
   },
   "scripts": {

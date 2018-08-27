@@ -1,0 +1,33 @@
+.nav {
+  color: rgb(221, 196, 65);
+  font-family: pubgFont;
+  display: grid;
+}
+
+.nav > div > a {
+  text-decoration: none;
+  color: rgb(221, 196, 65);
+  margin: 1rem;
+}
+
+.brand {
+  display: flex;
+  margin-left: 1rem;
+}
+
+.brand > h1 {
+  letter-spacing: 1px;
+}
+
+.brand > p {
+  font-size: 20px;
+  align-self: center;
+  margin-bottom: 10px;
+}
+
+.links {
+  grid-column: 2 / span 1;
+  text-align: right;
+  align-self: center;
+  font-size: 24px;
+}
