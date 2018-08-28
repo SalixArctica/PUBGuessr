@@ -1,0 +1,11 @@
+.About {
+  color: rgb(221, 196, 65);
+  text-align: center;
+  font-family: pubgFont;
+  font-size: 24px;
+}
+
+.About > p > a {
+  text-decoration: underline;
+  cursor: pointer;
+}

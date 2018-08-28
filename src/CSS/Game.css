@@ -7,6 +7,20 @@
     display: none;
 }
 
+.leaflet-control-attribution {
+  display: none;
+}
+
+.leaflet-control-zoom-in {
+  color: rgb(221, 196, 65) !important;
+  background-color: black !important;
+}
+
+.leaflet-control-zoom-out {
+  color: rgb(221, 196, 65) !important;
+  background-color: black !important;
+}
+
 .parent360 {
   height: 100%;
   width: 100%;

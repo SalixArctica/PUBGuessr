@@ -1,0 +1,24 @@
+.leaderboard {
+  color: rgb(221, 196, 65);
+  margin-left: 1rem;
+  font-family: pubgFont;
+  letter-spacing: 2px;
+}
+
+.leaderboardEntry {
+  display: grid;
+  grid-template-columns: auto 1fr 1fr;
+  border: 1px solid grey;
+  padding-left: 1rem;
+  margin-right: 1rem;
+  font-size: 25px;
+}
+
+.lbName {
+  margin-left: 1rem;
+}
+
+.lbScore {
+  text-align: right;
+  margin-right: 1rem;
+}

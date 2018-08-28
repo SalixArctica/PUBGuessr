@@ -5,10 +5,10 @@ import '../CSS/Nav.css'
 const Nav = () => {
   return (
     <div className="nav">
-      <div className="brand">
+      <Link to='/' className="brand">
         <h1>PUBG</h1>
         <p>uessr</p>
-      </div>
+      </Link>
       <div className="links">
         <Link to='/game'>Play</Link>
         <Link to='/leaderboard'>LeaderBoard</Link>

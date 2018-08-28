@@ -5,6 +5,14 @@
   letter-spacing: 1px;
 }
 
+.titleCard > h1 {
+  font-size: 4rem;
+}
+
+.titleCard > p {
+  margin-top: -2rem;
+}
+
 .maps {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;

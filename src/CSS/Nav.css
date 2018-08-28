@@ -2,9 +2,10 @@
   color: rgb(221, 196, 65);
   font-family: pubgFont;
   display: grid;
+  border-bottom: 1px solid rgb(221, 196, 65);
 }
 
-.nav > div > a {
+.links > a {
   text-decoration: none;
   color: rgb(221, 196, 65);
   margin: 1rem;
@@ -13,6 +14,8 @@
 .brand {
   display: flex;
   margin-left: 1rem;
+  text-decoration: none;
+  color: rgb(221, 196, 65);
 }
 
 .brand > h1 {

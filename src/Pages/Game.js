@@ -32,6 +32,7 @@ class Game extends React.Component {
       id: 0,
       round: 1,
       score: 0,
+      name: null,
       points: 0,
       guess: {
         lat: -200000,
@@ -52,6 +53,17 @@ class Game extends React.Component {
       modalIsOpen: false,
       endScreen: true,
     })
+  }
+
+  submitLeaderboard = () => {
+    fetch('http://localhost:5000/api/leaderboard', {
+      method: 'POST',
+      body: {
+        name: this.state.name,
+        score: this.state.score
+      }
+    })
+    .then(res => res.status == 200 ? this.props.history.push({ pathname: '/leaderboard'}) : null )
   }
 
   renderRightButton = () => {
@@ -112,8 +124,8 @@ class Game extends React.Component {
   getPoints = () => {
     let d = this.getDistance();
     let points;
-    let perc = d/2000;
-    if(perc > 1) {
+    let perc = 1 - d/2000;
+    if(perc < 0) {
       return 0;
     }
     else {
@@ -175,8 +187,8 @@ class Game extends React.Component {
               <h1>FINAL SCORE: {this.state.score}</h1>
             </div>
             <h1>Enter your name for leaderboard</h1>
-            <input type="text"/>
-            <button>Submit</button>
+            <input value={this.state.name} onChange={(evt) => this.setState({name: evt.target.value})} type="text"/>
+            <button onClick= {this.submitLeaderboard}>Submit</button>
             <button
               onClick={() => window.location.reload()}
             >
